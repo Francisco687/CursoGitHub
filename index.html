@@ -15,7 +15,38 @@
 
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container" >
+            <a class="navbar-brand" href="#" >Agregar usuario</a>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <input class="form-control my-3" type="text" id="nombre" placeholder="Nombre">
+        <input class="form-control my-3" type="text" id="apellido" placeholder="Apellido">
+        <input class="form-control my-3" type="text" id="fecha" placeholder="Fecha">
+        <button id="boton" type="boton" class="form-control btn btn-primary btn-lg btn-block my-3" " onclick="guardarUsuario()">Guardar</button>
+
+
+        <table class="table my-3">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Año</th>
+              <th scope="col">Borrar</th>
+              <th scope="col">Actualizar</th>
+            </tr>
+          </thead>
+          <tbody id="tabla">
+            
+          </tbody>
+        </table>
+
+
+    </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
